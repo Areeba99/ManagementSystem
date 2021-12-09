@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #990000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowershop.Controllers.ProfitController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TableView fx:id="profittbl" layoutX="61.0" layoutY="114.0" prefHeight="200.0" prefWidth="595.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="150.0">
+        <columns>
+          <TableColumn fx:id="column_itemid" prefWidth="166.0" text="Item ID" />
+          <TableColumn fx:id="column_purchaseprice" prefWidth="174.0" text="Purchase Price" />
+            <TableColumn fx:id="column_sellingprice" prefWidth="193.0" text="Selling Price" />
+            <TableColumn fx:id="column_profit" prefWidth="156.0" text="Profit" />
+        </columns>
+      </TableView>
+      <Pane layoutX="6.0" layoutY="4.0" prefHeight="112.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="398.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+         <children>
+            <Label layoutX="329.0" layoutY="66.0" text="Sale Profit Comparison">
+               <effect>
+                  <Glow level="0.74" />
+               </effect>
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow color="#990000" height="146.81" radius="36.2025" width="0.0" />
+         </effect>
+      </Pane>
+      <ImageView fx:id="back" fitHeight="37.0" fitWidth="38.0" layoutX="54.0" layoutY="64.0" onMouseClicked="#toPreviousScreen" AnchorPane.bottomAnchor="409.0" AnchorPane.topAnchor="54.0">
+         <image>
+            <Image url="file:/C:/Users/areeb/Desktop/flowers/back.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #990000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowershop.Controllers.EmpSignupController">
+   <children>
+      <Label layoutX="512.0" layoutY="105.0" text="Employee Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow level="0.9" />
+         </effect>
+      </Label>
+      <VBox layoutX="484.0" layoutY="139.0" prefHeight="260.0" prefWidth="241.0" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="484.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="139.0">
+         <children>
+            <Label text="*Username" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField id="username" fx:id="t_username" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" promptText="Employee ID" style="-fx-font-size: 16;">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="*Password" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <PasswordField id="password" fx:id="t_password" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" promptText="Enter Password" style="-fx-font-size: 16;">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label text="*Confirm Password" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <PasswordField id="confirmpassword" fx:id="t_confirmpassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" style="-fx-font-size: 16;">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label fx:id="match" text="Password does not match." textFill="#f2ff48" visible="false">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="enter" text="Populate all fields." textFill="#f2ff48" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="105.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button id="signup" fx:id="signup" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: #cc0000;" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="130.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="WHITE" />
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="575.0" fitWidth="333.0" layoutX="67.0" layoutY="-46.0" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="400.0">
+         <image>
+            <Image url="file:/C:/Users/areeb/Desktop/flowers/2237f774380a7e877848a5de3af45a06.jpg" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.45" color="#990000" radius="38.17" width="133.68" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

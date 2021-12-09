@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #990000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowershop.Controllers.ProductDetailController">
+   <children>
+      <GridPane layoutX="55.0" layoutY="125.0" prefHeight="125.0" prefWidth="790.0" AnchorPane.bottomAnchor="340.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="125.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="113.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="220.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="151.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="205.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="*Item ID:" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Product Name:" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="prodid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+            <TextField fx:id="prodname" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Quantity:" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="*Product ID:" textFill="WHITE" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="iid" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+            <TextField fx:id="qty" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+            <Button fx:id="add" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: #cc0000;" text="Add" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="WHITE" />
+               </effect>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="remove" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleDeleteButtonAction" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: #cc0000;" text="Remove" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="WHITE" />
+               </effect>
+            </Button>
+            <Button fx:id="edit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleUpdateButtonAction" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: #cc0000;" text="Edit" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="WHITE" />
+               </effect>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+      <Pane layoutX="6.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="114.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="490.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <InnerShadow color="#990000" height="146.81" radius="36.2025" width="0.0" />
+         </effect>
+         <children>
+            <Label layoutX="86.0" layoutY="68.0" text="Product Details">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Glow level="0.9" />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="close" layoutX="711.0" layoutY="513.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toPreviousScreen" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: #cc0000;" text="Close" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="productdetailtbl" layoutX="102.0" layoutY="351.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="581.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="280.0">
+         <columns>
+            <TableColumn fx:id="column_productid" prefWidth="120.0" text="Product ID" />
+            <TableColumn fx:id="column_itemid" prefWidth="132.0" text="Item ID" />
+            <TableColumn fx:id="column_itemname" prefWidth="150.0" text="Item Name" />
+            <TableColumn fx:id="column_price" prefWidth="93.0" text="Unit Price" />
+            <TableColumn fx:id="column_quantity" prefWidth="90.0" text="Quantity" />
+            <TableColumn fx:id="column_total" prefWidth="104.0" text="Total Price" />
+         </columns>
+      </TableView>
+      <TextField fx:id="base" editable="false" layoutX="609.0" layoutY="471.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" />
+      <Label layoutX="478.0" layoutY="478.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Total Base Price:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="exist" layoutX="613.0" layoutY="260.0" text="No product with this ID exists." textFill="#f2ff48" visible="false">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="enter" layoutX="240.0" layoutY="117.0" text="Enter Product ID." textFill="#f2ff48" visible="false">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="479.0" text="* Fields that are necessary to fill." textFill="#f2ff48">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="chkfields" layoutX="638.0" layoutY="260.0" text="Fill all the required fields." textFill="#f2ff48" visible="false">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="existitem" layoutX="634.0" layoutY="260.0" text="No item with this ID exists." textFill="#f2ff48" visible="false">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="go" layoutX="398.0" layoutY="105.0" mnemonicParsing="false" onAction="#loadProductName" text="go" />
+   </children>
+</AnchorPane>

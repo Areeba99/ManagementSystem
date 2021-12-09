@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-border-width: 10; -fx-background-color: #990000;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowershop.Controllers.StartUpController">
+    <stylesheets>
+        <URL value="@startup.css" />
+    </stylesheets>
+   <children>
+      <Button id="admin" fx:id="admin" layoutX="475.0" layoutY="287.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #cc0000; -fx-text-fill: #ffffff;" text="Continue as Administrator">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font></Button>
+      <Button id="employee" fx:id="employee" layoutX="476.0" layoutY="355.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #cc0000; -fx-text-fill: #ffffff; -fx-font-size: 16; -fx-font-family: 'Times New Roman';" text="Continue as Employee">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect></Button>
+      <Label layoutX="515.0" layoutY="122.0" style="-fx-text-fill: #ffffff;" text="Welcome to">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="595.0" fitWidth="486.0" layoutX="-134.0" layoutY="-57.0">
+         <image>
+            <Image url="file:/C:/Users/areeb/Desktop/flowers/3-30913_flowers-illustration-png-flower-illustrations-png.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.45" color="#990000" height="100.32" radius="41.69" width="68.44" />
+         </effect>
+      </ImageView>
+      <Label layoutX="463.0" layoutY="171.0" style="-fx-text-fill: #ffffff;" text="Flower Shop">
+         <font>
+            <Font name="Lucida Bright Demibold" size="36.0" />
+         </font>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

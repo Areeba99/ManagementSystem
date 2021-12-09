@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #990000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowershop.Controllers.CustomerController">
+   <children>
+      <Pane layoutX="-4.0" layoutY="-13.0" prefHeight="115.0" prefWidth="922.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="398.0" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-18.0" AnchorPane.topAnchor="-13.0">
+         <effect>
+            <InnerShadow color="#990000" height="146.81" radius="36.2025" width="0.0" />
+         </effect>
+         <children>
+            <Label layoutX="340.0" layoutY="73.0" text="Customer Management">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="customertbl" layoutX="26.0" layoutY="112.0" prefHeight="200.0" prefWidth="548.0" AnchorPane.bottomAnchor="139.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="135.0">
+        <columns>
+          <TableColumn id="sid" fx:id="column_cid" prefWidth="132.0" text="Customer ID" />
+          <TableColumn id="column_fname" fx:id="column_fname" prefWidth="193.0" text="First Name" />
+            <TableColumn fx:id="column_lname" prefWidth="182.0" text="Last Name" />
+            <TableColumn fx:id="column_contactno" prefWidth="182.0" text="Contact No." />
+        </columns>
+      </TableView>
+      <GridPane layoutX="307.0" layoutY="381.0" prefHeight="50.0" prefWidth="300.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="update" fitHeight="50.0" fitWidth="50.0" focusTraversable="true" onMouseClicked="#toUpdateCustomerScreen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <effect>
+                  <InnerShadow color="#990000" />
+               </effect>
+               <image>
+                  <Image url="file:/C:/Users/areeb/Desktop/flowers/update.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="add" fitHeight="40.0" fitWidth="40.0" focusTraversable="true" onMouseClicked="#toAddCustomerScreen" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <effect>
+                  <InnerShadow color="#990000" />
+               </effect>
+               <image>
+                  <Image url="file:/C:/Users/areeb/Desktop/flowers/add.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="delete" fitHeight="40.0" fitWidth="40.0" focusTraversable="true" onMouseClicked="#toDeleteCustomerScreen" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <effect>
+                  <InnerShadow color="#990000" />
+               </effect>
+               <image>
+                  <Image url="file:/C:/Users/areeb/Desktop/flowers/delete.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <ImageView fx:id="back" fitHeight="37.0" fitWidth="38.0" layoutX="54.0" layoutY="64.0" onMouseClicked="#toPreviousScreen" AnchorPane.bottomAnchor="409.0" AnchorPane.topAnchor="54.0">
+         <image>
+            <Image url="file:/C:/Users/areeb/Desktop/flowers/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

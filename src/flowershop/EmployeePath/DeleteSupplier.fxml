@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #990000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowershop.Controllers.DeleteSupplierController">
+   <children>
+      <Label layoutX="294.0" layoutY="234.0" text="Supplier ID:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font></Label>
+      <TextField fx:id="sid" layoutX="413.0" layoutY="227.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" AnchorPane.bottomAnchor="241.0" AnchorPane.topAnchor="227.0" />
+      <Pane layoutX="16.0" layoutY="11.0" prefHeight="114.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="398.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+         <children>
+            <Label layoutX="374.0" layoutY="69.0" text="Delete Supplier">
+               <effect>
+                  <Glow level="0.81" />
+               </effect>
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow color="#990000" height="146.81" radius="36.2025" width="0.0" />
+         </effect>
+      </Pane>
+      <ImageView fx:id="back" fitHeight="37.0" fitWidth="38.0" layoutX="64.0" layoutY="74.0" onMouseClicked="#toPreviousScreen" AnchorPane.bottomAnchor="409.0" AnchorPane.topAnchor="54.0">
+         <image>
+            <Image url="file:/C:/Users/areeb/Desktop/flowers/back.png" />
+         </image>
+      </ImageView>
+      <Button id="submit" fx:id="delete" layoutX="518.0" layoutY="288.0" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: #cc0000;" text="Delete" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="exist" layoutX="421.0" layoutY="272.0" text="No supplier with this ID exists." textFill="#f2ff48" visible="false">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="enter" layoutX="413.0" layoutY="211.0" text="Enter Supplier ID." textFill="#f2ff48" visible="false">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

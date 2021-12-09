@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #990000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowershop.Controllers.UpdateEmployeeController">
+    <children>
+      <GridPane fx:id="employeegrid" alignment="CENTER" layoutX="95.0" layoutY="100.0" prefHeight="364.0" prefWidth="430.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="180.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.00001525878906" minWidth="10.0" prefWidth="132.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="239.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.33331298828125" minWidth="10.0" prefWidth="113.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="206.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="130.0" minHeight="6.0" prefHeight="65.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="l_firstname" text="First Name:" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <TextField id="firstname" fx:id="firstname" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Label fx:id="l_lastname" text="Last Name:" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <TextField id="lastname" fx:id="lastname" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Label fx:id="l_hiredate" text="Hire Date:" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="l_shift" text="Shift:" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <RadioButton id="Evening" fx:id="Evening" mnemonicParsing="false" text="Evening" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="80.0" />
+               </GridPane.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="t_shift" />
+               </toggleGroup>
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton id="Morning" fx:id="Morning" mnemonicParsing="false" text="Morning" textFill="WHITE" toggleGroup="$t_shift" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="l_contact" text="Contact Number:" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <TextField id="contact" fx:id="contact" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Label fx:id="l_address" text="Permanent Address:" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <TextField id="salarym" fx:id="salarym" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Label fx:id="l_salarym" text="Salary:" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <TextField id="address" fx:id="address" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="516.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="335.0" />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets left="202.0" />
+               </opaqueInsets>
+            </TextField>
+            <Label fx:id="l_gender" text="Gender:" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <RadioButton id="Male" fx:id="Male" mnemonicParsing="false" text="Male" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="t_gender" />
+               </toggleGroup>
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton id="Female" fx:id="Female" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$t_gender" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="80.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="l_birthdate" text="Birth Date:" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <DatePicker prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <DatePicker prefHeight="32.0" prefWidth="180.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Label layoutX="197.0" layoutY="136.0" text="Enter Employee ID:" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <TextField id="empid" fx:id="empid" layoutX="360.0" layoutY="129.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" />
+      <Button fx:id="go" layoutX="600.0" layoutY="127.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: #cc0000;" text="Go" textFill="WHITE">
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font></Button>
+        <Button id="update" fx:id="update" layoutX="704.0" layoutY="427.0" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: #cc0000;" text="Update" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow color="WHITE" />
+         </effect>
+      </Button>
+      <Pane layoutX="-4.0" layoutY="-6.0" prefHeight="112.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="398.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+         <effect>
+            <InnerShadow color="#990000" height="146.81" radius="36.2025" width="0.0" />
+         </effect>
+         <children>
+            <Label layoutX="363.0" layoutY="63.0" text="Update Employee">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Glow level="0.74" />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="back" fitHeight="37.0" fitWidth="38.0" layoutX="44.0" layoutY="54.0" onMouseClicked="#toPreviousScreen" AnchorPane.bottomAnchor="409.0" AnchorPane.topAnchor="54.0">
+         <image>
+            <Image url="file:/C:/Users/areeb/Desktop/flowers/back.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

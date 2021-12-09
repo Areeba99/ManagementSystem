@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #990000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flowershop.Controllers.EmpLoginController">
+   <children>
+      <Label layoutX="527.0" layoutY="128.0" text="Employee Login" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow level="0.79" />
+         </effect>
+      </Label>
+      <VBox layoutX="488.0" layoutY="187.0" prefHeight="262.0" prefWidth="245.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="488.0" AnchorPane.rightAnchor="67.0" AnchorPane.topAnchor="187.0">
+         <children>
+            <Label text="Username:" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </Label>
+            <TextField id="username" fx:id="t_username" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" promptText="Employee ID" style="-fx-font-size: 16;">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Password:" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <PasswordField id="password" fx:id="t_password" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="180.0" promptText="Assigned Password" style="-fx-font-size: 16;">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label fx:id="incorrect" text="Incorrect username and password." textFill="#f2ff48" visible="false">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Button id="login" fx:id="login" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="78.0" style="-fx-background-color: #cc0000;" text="Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="WHITE" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="132.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="589.0" fitWidth="344.0" layoutX="69.0" layoutY="-58.0" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="387.0">
+         <image>
+            <Image url="file:/C:/Users/areeb/Desktop/flowers/57fbb7ebfd1817b342675a8ebc96cdd1.jpg" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.45" color="#990000" radius="29.2725" width="98.09" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="back" fitHeight="37.0" fitWidth="38.0" layoutX="24.0" layoutY="34.0" onMouseClicked="#toPreviousScreen" AnchorPane.bottomAnchor="439.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="748.0" AnchorPane.topAnchor="24.0">
+         <image>
+            <Image url="file:/C:/Users/areeb/Desktop/flowers/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
